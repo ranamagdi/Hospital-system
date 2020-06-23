@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="system.FXML5Controller">
+   <children>
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0">
+         <left>
+            <VBox prefHeight="941.0" prefWidth="196.0" style="-fx-background-color: #1b0119;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btn" prefHeight="74.0" prefWidth="155.0" style="-fx-background-color: #fb83f2;" text="Add ">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="10.0" top="40.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="173.0" style="-fx-background-color: #fb83f2;" text="Delete">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#logout" prefHeight="63.0" prefWidth="196.0" style="-fx-background-color: #f903b9;" text="Logout">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="30.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#home" prefHeight="59.0" prefWidth="203.0" style="-fx-background-color: #f903b9;" text="Home">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <BorderPane prefHeight="108.0" prefWidth="1920.0" style="-fx-background-color: #f49ee6;" BorderPane.alignment="CENTER">
+               <left>
+                  <ImageView fitHeight="111.0" fitWidth="321.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@logo.png" />
+                     </image>
+                  </ImageView>
+               </left>
+            </BorderPane>
+         </top>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #aa058e;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="13.0" layoutY="2.0" prefHeight="57.0" prefWidth="149.0" text="Name " textFill="#e2dfeb">
+                     <font>
+                        <Font name="Book Antiqua" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" layoutX="188.0" layoutY="14.0" prefHeight="33.0" prefWidth="243.0" />
+                  <Label layoutX="30.0" layoutY="56.0" prefHeight="57.0" prefWidth="149.0" text="ID" textFill="#e2dfeb">
+                     <font>
+                        <Font name="Book Antiqua" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="id" layoutX="189.0" layoutY="68.0" prefHeight="33.0" prefWidth="246.0" />
+                  <Label layoutX="10.0" layoutY="107.0" prefHeight="57.0" prefWidth="117.0" text="Address" textFill="#e2dfeb">
+                     <font>
+                        <Font name="Book Antiqua" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="add" layoutX="164.0" layoutY="112.0" prefHeight="48.0" prefWidth="284.0" />
+                  <Label layoutX="4.0" layoutY="167.0" prefHeight="57.0" prefWidth="222.0" text="Phone Number" textFill="#e2dfeb">
+                     <font>
+                        <Font name="Book Antiqua" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ph" layoutX="210.0" layoutY="179.0" prefHeight="33.0" prefWidth="234.0" />
+                  <Label layoutX="5.0" layoutY="280.0" prefHeight="57.0" prefWidth="154.0" text="Symptoms" textFill="#e2dfeb">
+                     <font>
+                        <Font name="Book Antiqua" size="30.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="ge" layoutX="198.0" layoutY="232.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="248.0" style="-fx-background-color: white;">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Female" />
+                        <MenuItem mnemonicParsing="false" text="Male" />
+                     </items>
+                  </MenuButton>
+                  <Label layoutX="17.0" layoutY="224.0" prefHeight="50.0" prefWidth="129.0" text="Gender" textFill="#e2dfeb">
+                     <font>
+                        <Font name="Book Antiqua" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="sy" layoutX="160.0" layoutY="287.0" prefHeight="88.0" prefWidth="287.0" />
+                  <Label layoutX="10.0" layoutY="393.0" prefHeight="55.0" prefWidth="143.0" text="Diagnosis" textFill="#e2dfeb">
+                     <font>
+                        <Font name="Book Antiqua" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="dia" layoutX="161.0" layoutY="386.0" prefHeight="86.0" prefWidth="286.0" />
+                  <Label layoutX="5.0" layoutY="476.0" prefHeight="55.0" prefWidth="155.0" text="Payment" textFill="#e2dfeb">
+                     <font>
+                        <Font name="Book Antiqua" size="30.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="p" layoutX="171.0" layoutY="486.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="282.0" style="-fx-background-color: white;">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Credit" />
+                        <MenuItem mnemonicParsing="false" text="Cach" />
+                     </items>
+                  </MenuButton>
+                  <TableView fx:id="tabel" layoutX="459.0" layoutY="1.0" prefHeight="972.0" prefWidth="711.0">
+                     <columns>
+                        <TableColumn fx:id="dname" onEditCommit="#changn" prefWidth="75.0" text="Name" />
+                        <TableColumn fx:id="iname" onEditCommit="#changi" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="aname" onEditCommit="#changa" prefWidth="59.0" text="Address" />
+                        <TableColumn fx:id="pname" onEditCommit="#changph" prefWidth="95.0" text="Phone number" />
+                        <TableColumn fx:id="gender" onEditCommit="#changg" prefWidth="56.0" text="Gender" />
+                        <TableColumn fx:id="sname" onEditCommit="#changas" prefWidth="68.0" text="Symptoms" />
+                        <TableColumn fx:id="dia" onEditCommit="#changd" prefWidth="84.0" text="Diagnosis" />
+                        <TableColumn fx:id="pay" onEditCommit="#changp" prefWidth="61.0" text="Payment" />
+                        <TableColumn fx:id="room" onEditCommit="#changar" prefWidth="131.0" text="Number of room" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="5.0" layoutY="539.0" prefHeight="55.0" prefWidth="247.0" text="Number of room" textFill="#e2dfeb">
+                     <font>
+                        <Font name="Book Antiqua" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="r" layoutX="244.0" layoutY="550.0" prefHeight="33.0" prefWidth="202.0" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
