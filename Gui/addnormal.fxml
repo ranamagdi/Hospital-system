@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #aa058e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.FXML6Controller">
+   <children>
+      <Pane prefHeight="155.0" prefWidth="1920.0" style="-fx-background-color: #f49ee6;">
+         <children>
+            <ImageView fitHeight="137.0" fitWidth="325.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="155.0" prefHeight="788.0" prefWidth="200.0" style="-fx-background-color: #1b0119;">
+         <children>
+            <Button layoutX="4.0" layoutY="6.0" mnemonicParsing="false" onAction="#btn" prefHeight="88.0" prefWidth="193.0" style="-fx-background-color: #f49ee6;" text="ADD">
+               <font>
+                  <Font name="Book Antiqua Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="4.0" layoutY="245.0" mnemonicParsing="false" onAction="#logout" prefHeight="58.0" prefWidth="193.0" style="-fx-background-color: #f903b9;" text="Logout">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="4.0" layoutY="320.0" mnemonicParsing="false" onAction="#home" prefHeight="45.0" prefWidth="193.0" style="-fx-background-color: #f903b9;" text="Home">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="4.0" layoutY="123.0" mnemonicParsing="false" onAction="#delete" prefHeight="88.0" prefWidth="193.0" style="-fx-background-color: #f49ee6;" text="Delete">
+               <font>
+                  <Font name="Book Antiqua Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="216.0" layoutY="155.0" prefHeight="48.0" prefWidth="95.0" text="Name" textFill="#fffefe">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="359.0" prefHeight="47.0" prefWidth="122.0" text="Gender" textFill="#fffefe">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="299.0" prefHeight="60.0" prefWidth="220.0" text="Phone Number" textFill="#fffefe">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="251.0" prefHeight="48.0" prefWidth="115.0" text="Adress" textFill="#fffefe">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="203.0" prefHeight="48.0" prefWidth="67.0" text="ID" textFill="#fffefe">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="456.0" prefHeight="68.0" prefWidth="200.0" text="Diagonsis" textFill="#fffefe">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="406.0" prefHeight="48.0" prefWidth="193.0" text="Symptoms" textFill="#fffefe">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="515.0" prefHeight="68.0" prefWidth="200.0" text="Payment" textFill="#fffefe">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="444.0" layoutY="173.0" prefHeight="30.0" prefWidth="255.0" />
+      <TextField fx:id="d" layoutX="444.0" layoutY="475.0" prefHeight="30.0" prefWidth="255.0" />
+      <TextField fx:id="sy" layoutX="444.0" layoutY="415.0" prefHeight="30.0" prefWidth="255.0" />
+      <TextField fx:id="ge" layoutX="444.0" layoutY="368.0" prefHeight="30.0" prefWidth="255.0" />
+      <TextField fx:id="ph" layoutX="444.0" layoutY="322.0" prefHeight="30.0" prefWidth="255.0" />
+      <TextField fx:id="p" layoutX="444.0" layoutY="534.0" prefHeight="30.0" prefWidth="255.0" />
+      <TextField fx:id="id" layoutX="444.0" layoutY="227.0" prefHeight="30.0" prefWidth="255.0" />
+      <TextField fx:id="add" layoutX="444.0" layoutY="269.0" prefHeight="30.0" prefWidth="255.0" />
+      <TableView fx:id="tabel" layoutX="724.0" layoutY="155.0" prefHeight="924.0" prefWidth="643.0">
+        <columns>
+          <TableColumn fx:id="dname" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="iname" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="aname" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="pname" prefWidth="108.0" text="Phone Number" />
+            <TableColumn fx:id="gender" prefWidth="76.0" text="Gender" />
+            <TableColumn fx:id="sname" prefWidth="74.0" text="Symptoms" />
+            <TableColumn fx:id="dia" prefWidth="85.0" text="Diagonises" />
+            <TableColumn fx:id="pay" prefWidth="74.0" text="Payment" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
